@@ -11,7 +11,7 @@ def change_color(object, colors):
 
 
 def main():
-    colors =  colorgram.extract('hirst.jpg', 50)
+    colors = colorgram.extract('hirst.jpg', 50)
     s = turtle.getscreen()
     s.colormode(255)
     t = turtle.Turtle()
@@ -22,7 +22,6 @@ def main():
     t.penup()
     t.goto(-325, y)
     t.shape('circle')
-
 
     while t.ycor() < 340:
         change_color(t, colors)
